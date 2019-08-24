@@ -187,25 +187,28 @@
         </div> -->
         <div class="booking-form__field">
           <label for="b-arrival-date">Arrival & Departure Dates</label>
-          <input id="b-arrival-date" type="date" required></input>
-          <input id="b-departure-date" type="date" required></input>
+          <div class="booking-form__field2">
+            <input id="b-arrival-date" type="date"></input>
+            <input id="b-departure-date" type="date"></input>
+          </div>
         </div>
         <div class="booking-form__field">
-          <label for="b-persons">Room Type</label>
-          <select>
+          <label for="b-room-type">Room Type</label>
+          <select id="b-room-type">
             <option>Any</option>
             <option>Super Deluxe Room</option>
             <option>Deluxe Room</option>
           </select>
         </div>
         <div class="booking-form__field">
-          <label for="b-persons">Total no. of rooms</label>
-          <input id="b-persons" type="number" placeholder="Enter the no. of rooms required" required></input>
+          <label for="b-rooms">Total no. of rooms</label>
+          <input id="b-rooms" type="number" placeholder="Enter the no. of rooms required"></input>
         </div>
         <div class="booking-form__field">
           <label for="b-message">Message</label>
           <textarea id="b-message" type="number" placeholder="Your message..."></textarea>
         </div>
+        <div id="booking-form__msg"></div>
         <button type="submit">Submit</button>
       </form>
     </div>
